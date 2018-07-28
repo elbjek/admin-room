@@ -60,10 +60,14 @@ export default {
                 } else {
                     newArticle.author = "Author unknown"
                 }
+                console.log(this.newAuthor)
                 this.socket.emit('addNewArticle', newArticle);
                 this.$router.push({path:"/"});
             }
         },
+    },
+    mounted() {
+        
     },
 }
 </script>
