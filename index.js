@@ -21,6 +21,7 @@ io.on('connection', function(socket) {
         );
     });
     socket.on('addNewArticle', (data)=>{
+        console.log("addnewarticle")
         Controller.addNewArticle(data , 
             function(err, results){
                 if(err) throw err;

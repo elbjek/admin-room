@@ -29,9 +29,7 @@ export default {
     data() {
         return {
             newsLoaded: false,
-            news: [
-                    
-            ],
+            news: [],
             socket : io('localhost:3001')
         }
     },

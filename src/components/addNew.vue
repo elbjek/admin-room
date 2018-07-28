@@ -49,10 +49,12 @@ export default {
     },
     methods: {
         addArticle(e) {
+           
             if(this.newTitle != '' && this.newCategory != ''){
                 var newArticle = {};
                 newArticle.title = this.newTitle;
                 newArticle.category = this.newCategory;
+
                 if(this.newAutor != ''){
                     newArticle.author = this.newAutor;
                 } else {
@@ -62,9 +64,6 @@ export default {
                 this.$router.push({path:"/"});
             }
         },
-    },
-    mounted() {
-        
     },
 }
 </script>
